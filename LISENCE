@@ -1,0 +1,94 @@
+public class Section1 {
+	public static  void main(String[] args) {
+	class Student {
+		String forenames;
+		String surname;
+		String emailAddress;
+		String studentDegreeLink;
+		String dateOfBirth;
+		String firstName;
+	}
+	class Lecturer {
+		String forenames;
+		String surname;
+		String emailAddress;
+		String dateOfBirth;
+		String degreeList;
+		String firstName;
+	}
+	class Degree {
+		String degreeName;
+		String degreeDuration;
+		String courses;
+		String degreeLecturer;
+	}
+	class Course {
+		String courseName;
+		String courseDuration;
+		String courseDegreeLink;
+	}
+	
+	
+		Student student = new Student();
+		student.forenames = "Sibusisiwe Pearl";
+		student.surname = "Zondo";
+		student.emailAddress = "spzondo3@gmail.com";
+		student.studentDegreeLink = "https://www.computerscience.com";
+		student.dateOfBirth = "31-01-2001";
+		student.firstName ="Sibusisiwe";
+		
+		Lecturer lecturer = new Lecturer();
+		lecturer.forenames = "John Walo";
+		lecturer.surname = "Broth";
+		lecturer.emailAddress = "johnWalo@gmail.com";
+		lecturer.degreeList = "Computer Science, Health Science, Environmental Science";
+		lecturer.firstName = "John";
+		
+		
+		Degree degree = new Degree();
+		degree.degreeName = "Web Development";
+		degree.degreeDuration = "3 months";
+		degree.courses = "Programming 1, Introduction to Statistics, Web Development, English Composition";
+		degree.degreeLecturer = "John Walo Broth";
+		
+		Course course = new Course();
+		course.courseName = "Computer Science";
+		course.courseDuration = "4 years";
+		course.courseDegreeLink = "www.webdevelopment.com";
+		
+	    System.out.println("STUDENT");
+		System.out.println("Forenames: " + student.forenames);
+		System.out.println("Surname: " + student.surname);
+		System.out.println("Email Address: " + student.emailAddress);
+		System.out.println("Student's Degree Link: " + student.studentDegreeLink);
+		System.out.println("FirstName: " + student.firstName);
+		System.out.println("FullName: " + student.forenames + student.surname);
+		System.out.println("__________________________________________________");
+		
+		System.out.println("LECTURER");
+		System.out.println("Forenames: " + lecturer.forenames);
+		System.out.println("Surname: " + lecturer.surname);
+		System.out.println("Email Address: " + lecturer.emailAddress);
+		System.out.println("Lecturer Degree List: " + lecturer.degreeList);
+		System.out.println("FirstName: " + lecturer.firstName);
+		System.out.println("FullName: " + lecturer.forenames + " " + lecturer.surname);
+		System.out.println("__________________________________________________");
+ 				
+		
+		System.out.println("DEGREE");
+		System.out.println("Degree Name: " + degree.degreeName);
+		System.out.println("Degree Duration: " + degree.degreeDuration);
+		System.out.println("Degree Courses: " + degree.courses);
+		System.out.println("Degree Lecturer: " + degree.degreeLecturer);
+		System.out.println("__________________________________________________");
+		
+		System.out.println("COURSE");
+		System.out.println("Course Name: " + course.courseName);
+		System.out.println("Course Duration: " + course.courseDuration);
+		System.out.println("Course Link: " + course.courseDegreeLink);
+		System.out.println("__________________________________________________");
+ 			
+		
+	}
+
+}
